@@ -1,0 +1,172 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 2. C102 - Header (inc. Login options list & Country selector)
+========================================================================== */
+
+#header {
+    background: @color-white;
+    // margin-bottom: 8px; // removed for sitesplit 
+}
+.brand {
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+    height: 90px;
+    .logo {
+        width: 158px;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    .top-links {
+        top: 15px;
+        position: absolute;
+        right: 0;
+        z-index: 999999;
+        border-top: 0;
+        strong, strong a {
+            color: gray;
+            font-size: 1em;
+            white-space: nowrap;
+        }
+        a {
+            white-space: nowrap;
+        }
+        h3 span.icon {
+            padding-right: 10px;
+            margin-left: 5px;
+            background-position: left -36px;
+        }
+        & > li {
+            display: inline-block;
+            position: relative;
+            margin-left: 25px;
+            &:hover .top-links-details {
+                display: block;
+            }
+            &:hover .top-links-details {
+                display: block;
+            }
+            &:hover strong a {
+                text-decoration: none;
+                //background: transparent url(../img/sprite-icons-1x.png) -40px -33px no-repeat;
+            }
+        }
+        .top-links-details {
+            .box-shadow (0px, 6px, 5px, 0.5);
+            display: none;
+            padding: 5px 0;
+            background: #fff;
+            position: absolute;
+            right: 0;
+            top: 16px;
+            ul {
+                padding: 0 10px;
+                text-align: left;
+                margin-bottom: 0.5em;
+                li {
+                    list-style: none;
+                    background: transparent url(../img/sprite-icons-1x.png) -40px -33px no-repeat;
+                    padding-left: 10px;
+                }
+            }
+            strong {
+                text-align: left;
+                border-top: 1px solid gray;
+                margin: 0px 10px 0 10px;
+                padding-top: 5px;
+            }
+        }
+        &.open {
+            .top-links-details {
+                display: block;
+            }
+            h3, h3 a {
+                text-align: left;
+            }
+        }
+    }
+    .top-area {
+        bottom: 2px;
+        position: absolute;
+        right: 0;
+        z-index: 99;
+        .slogen, .header-search {
+            display: inline-block;
+        }
+        .slogen {
+            color: @color-cerulean;
+            font-size: 1.5em;
+            letter-spacing: 0;
+            line-height: 27px;
+            margin: 0;
+            border-right: 1px solid #0099e9;
+            padding: 0 10px;
+            float: left;
+        }
+        .header-search {
+            .search-toggle {
+                background: url(../img/search-icon.png) no-repeat 10px 4px transparent;
+                width: 35px;
+                height: 25px;
+                cursor: pointer;
+                display: block;
+                text-indent: -9999px;
+            }
+            .search-toggle.open {
+                background: url(../img/close-icon.png) no-repeat 10px 4px transparent;
+            }
+            &:hover {
+                //background: url(../img/close-icon.png) no-repeat 10px 4px transparent;
+            }
+            .clearfix();
+            form {
+                display: none;
+                width: 400px;
+                .box-shadow (0px, 3px, 5px, 0.5);
+                .clearfix();
+                padding: 15px;
+                position: absolute;
+                top: 25px;
+                right: 0px;
+                background: white;
+            }
+            &:hover form {
+                //display: block;
+            }
+            label {
+                display: block;
+                float: left;
+                text-indent: -9999px;
+            }
+            .search-text {
+                border: 1px solid #dbdbdb;
+                border-radius: 4px 0 0 4px;
+                width: 340px;
+                font-size: 13px;
+                margin: 0;
+                padding: 10px;
+                display: inline-block;
+                float: left;
+            }
+            .search-button {
+                background: url(../img/search-icon.png) no-repeat 8px 10px transparent;
+                border: 1px solid #dbdbdb;
+                border-radius: 0 4px 4px 0;
+                color: #fff;
+                cursor: pointer;
+                width: 35px;
+                height: 38px;
+                font-size: 13px;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                text-indent: -9999px;
+                font-size: 0;
+                line-height: 0;
+                float: left;
+            }
+        }
+    }
+}

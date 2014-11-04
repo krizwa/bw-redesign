@@ -1,0 +1,102 @@
+@import "../1_global/00_required.less";
+
+.carousel-full {
+    position: relative;
+    padding-top: 20px;
+    height: 425px;
+    margin: 0 20px;
+    padding-left: 9px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff url(../img/full-brand-container.png) left 10px no-repeat;
+}
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 922px;
+    height: 360px;
+    ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        width: 922px;
+        float: left;
+        overflow: hidden;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto !important;
+    }
+    /** Carousel Controls **/
+    &-prev, &-next {
+        background: transparent url(../img/sprite-icon.png) no-repeat;
+        cursor: pointer;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        text-indent: -999em;
+    }
+    &-prev {
+        background-position: left -4600px;
+    }
+    &-next {
+        background-position: right -4600px;
+    }
+    &-prev:focus, &-next:focus {
+        border: 0 !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
+    /** Carousel Pagination **/
+    &-pagination {
+        display: inline-block;
+        height: 30px;
+        margin-bottom: 17px;
+        a {
+            background: transparent url(../img/sprite-icon.png) no-repeat;
+            background-position: right -4800px;
+            cursor: pointer;
+            display: inline-block;
+            height: 30px;
+            text-indent: -9999px;
+            width: 21px;
+        }
+        a.active {
+            background-position: left -4800px;
+        }
+        a:focus {
+            border: 0 !important;
+            outline: 0 !important;
+            box-shadow: none !important;
+        }
+    }
+    .copy-wrapper {
+        padding: 20px 0 0 30px;
+        h1, h2 {
+            font-size: 2.3em;
+            margin: 0;
+            font-family: @font-expert-sans-extra-light;
+        }
+        .text-wrapper {
+            text-align: left;
+            float: left;
+            width: 70%;
+            background: #fff;
+        }
+        .cta-wrapper {
+            float: right;
+            width: 25%;
+            text-align: right;
+            a {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 10. T206 - Product Detail (E.g. Current Account)
+========================================================================== */
+
+.product-details .promo {
+    float: left;
+}
+.product-category-tabs .tab-list {
+    border-bottom: 4px solid #646464;
+    list-style: none;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding-left: 44px;
+    li {
+        background-color: #dfdfdf;
+        float: left;
+        margin-right: 3px;
+        text-transform: uppercase;
+        a {
+            color: #000;
+            display: block;
+            font-size: 1.08333em;
+            padding: 0.5em 0.9em;
+        }
+    }
+    li:focus {
+        outline: 2px solid #000 !important;
+    }
+    li.ui-tabs-active.ui-state-active {
+        background-color: #646464;
+        a {
+            color: #fff;
+        }
+    }
+}
+.lt-ie9 .product-category-tabs .tab-list li:focus {
+    outline: 2px solid #000 !important;
+    border: 0.1px solid #fff !important;
+}
+.product-detail-info.product-category {
+    margin-left: 38px;
+    padding: 10px;
+    width: 884px;
+    h2 {
+        margin-bottom: 0.1em;
+    }
+    p {
+        float: left;
+        margin-bottom: 0;
+    }
+    .button {
+        float: left;
+        margin-left: 20px;
+    }
+}

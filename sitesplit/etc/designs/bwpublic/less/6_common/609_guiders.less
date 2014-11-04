@@ -1,0 +1,164 @@
+@import "../1_global/00_required.less";
+@var1: #ffffff;
+@var2: #999999;
+@var3: #888888;
+@var4: #818181;
+@var5: #424242;
+@var6: #000000;
+/* ==========================================================================
+= 9. Guiders
+========================================================================== */
+/* The CSS is downloaded from the plugin and modified based on the requirment */
+.guider {
+    background: #fff;
+    border: 4px solid #999;
+    position: absolute;
+    outline: none;
+    width: 500px;
+    z-index: 100000005 !important;
+    .box-shadow(-3px, 3px, 2px, 0.2);  
+    .border-radius (5px);
+}
+.guiders {
+    &_arrow {
+        width: 42px;
+        height: 22px;
+        position: absolute;
+        display: none;
+        background-repeat: no-repeat;
+        z-index: 100000006 !important;
+        /*** For optimization, the arrows image is inlined in the css below.** To use your own arrows image, replace this background-image with your own arrows.* It should have four arrows, top, right, left, and down.*/
+        background-image: url(../img/barclays-sprite.png);
+    }
+    &_arrow_right {
+        display: block;
+        background-position: 0 0;
+        right: -42px;
+    }
+    &_arrow_down {
+        display: block;
+        background-position: 0 -42px;
+        bottom: -22px;
+    }
+    &_arrow_up {
+        display: block;
+        background-position: 0 -146px;
+        top: -22px;
+    }
+    &_arrow_left {
+        display: block;
+        bottom: 55px !important;
+        background-position: 0 -84px;
+        height: 40px;
+        left: -42px;
+    }
+    &_buttons_container {
+        height: 29px;
+        position: relative;
+        width: 100%;
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 1.1em;
+    }
+    &_button {
+        background: -moz-linear-gradient(top, #818181 0%, gray 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #818181), color-stop(100%, gray));
+        background-color: #818181;  /* Overruled by background gradient, in browsers where they exist */
+        bottom: 0;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        width: 120px;
+        padding: 8px 5px 9px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+    &_close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+    &_x_button {
+        color: #424242;
+        cursor: pointer;
+        margin: 0;
+        min-width: 7px;
+        height: 9px;
+        outline: none;
+        padding: 0;
+        text-indent: -999em;
+        background: url(../img/barclays-sprite.png) -279px 0 no-repeat;
+        width: 9px;
+    }
+    &_content {
+        background: white url(../img/guide-content-legacy-bg.png) repeat-x bottom left;
+        padding: 28px 10px 10px;
+        position: relative;
+        text-align: center;
+        line-height: 1.35em;
+        color: #000;
+        h1 {
+            color: #000;
+            margin: 0 0 9px;
+            padding: 0;
+            font-family: "ExpertSans-Bold";
+            font-size: 14px;
+            line-height: 1.2em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        p {
+            clear: both;
+            font-size: 12px;
+            margin: 0 0 22px;
+            padding: 0 15px;
+        }
+    }
+    &_highlight {
+        position: relative;
+        z-index: 101;
+    }
+}
+
+.btn-next {
+    position: absolute;
+    right: 0;
+}
+.btn-prev {
+    position: absolute;
+    left: 0;
+}
+.cssgradients .guiders_content {
+    .gradient (top, #e8e8e8, #ffffff);
+}
+
+#guiders_overlay {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: 10;
+}
+.guide-welcome, .guide-collection, .guide-download {
+    position: fixed !important;
+    top: auto !important;
+}
+.guide {
+    &-welcome {
+        bottom: 54px;
+        left: 34px !important;
+    }
+    &-collection {
+        bottom: 152px !important;
+    }
+    &-download {
+        bottom: 65px !important;
+    }
+}

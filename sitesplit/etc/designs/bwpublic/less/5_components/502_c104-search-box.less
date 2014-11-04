@@ -1,0 +1,98 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 2. C104 - Search box IP
+========================================================================== */
+
+#wt-wrapper-search {
+    .clearfix();
+    background: #c6c6c6;
+    margin: 8px;
+    padding: 20px 30px;
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.1em;
+    }
+    .search-fields {
+        position: relative;
+        border-bottom: 1px solid black;
+    }
+    input#search-query {
+        background: #fff;
+        border: medium none;
+        box-shadow: none;
+        color: #000;
+        font-family: "ExpertSansExtraLight", Helvetica, Arial;
+        font-size: 4em;
+        height: auto;
+        max-height: 130px;
+        min-height: 65px;
+        outline: medium none;
+        overflow: hidden;
+        padding-left: 11px;
+        text-align: left;
+        transition: all 0.4s ease-in-out 0s;
+        vertical-align: middle;
+        width: 97%;
+    }
+    #search-go {
+        background: url("//wealth.barclays.com/content/dam/bwpublic/global/images/aspect-ratio-1-0/optimize/chevronv1.png") no-repeat scroll 50% 50% #393939;
+        height: 67px;
+        width: 67px;
+        text-indent: -9999px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 0;
+    }
+    label {
+        display: none;
+        text-indent: -9999px;
+    }
+    #wt-results-wrap {
+        .clearfix();
+        #wt-subtitle {
+            text-transform: uppercase;
+            padding: 17px 0 5px 0;
+        }
+        #wt-results > div {
+            width: 25%;
+            float: left;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+/* `````` Making Liquid Responsive [begin] `````` */
+
+/* Activate Medium Screen (tablet behavior) - Portrait View  [iPad, GalaxyTab]*/
+@media only screen and (max-width: 980px) {
+
+}
+@media only screen and (min-width: 668px) and (max-width: 980px) {}
+
+/* Activate Small Screen (mobile behavior) - Landscape View [iPhone, GalaxyS4] */
+@media only screen and (max-width: 667px) {
+    #wt-wrapper-search {
+        #wt-results-wrap {
+            #wt-results > div {
+                width: 50%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 667px) {}
+
+/* Activate Small Screen (mobile behavior) - Portrait View [iPhone, GalaxyS4] */
+@media only screen and (max-width: 375px) {
+    #wt-wrapper-search {
+        #wt-results-wrap {
+            #wt-results > div {
+                width: auto;
+            }
+        }
+    }
+}
+/* ,,,,,, Making Liquid Responsive [end] ,,,,,,  */

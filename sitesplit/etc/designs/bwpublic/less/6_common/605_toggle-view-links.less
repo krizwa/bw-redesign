@@ -1,0 +1,99 @@
+@import "../1_global/00_required.less";
+@var1: #6e6e6e;
+@var2: #ffffff;
+
+/* ==========================================================================
+= 6. Toggle view links
+========================================================================== */
+.toggle-view {
+    padding: 0 0 0 27px !important;
+    li {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        a {
+            background-image: url(../img/sprite-icon.png);
+            background-repeat: no-repeat;
+            color: #6e6e6e;
+            display: block;
+            height: 28px;
+            line-height: 28px;
+            margin: 0px;
+            padding: 0 10px;
+            position: relative;
+            text-indent: 26px;
+            text-transform: uppercase;
+        }
+    }
+    li.map.on {
+        background: url(../img/barclays-sprite.png) 0 -1564px;
+    }
+    li.map.on:hover {
+        background: url(../img/barclays-sprite.png) 0 -1480px;
+    }
+    li.map {
+        background: url(../img/barclays-sprite.png) 0 -1480px;
+        a {
+            background-position: 2px -3796px;
+        }
+        a:hover {
+            background-position: 2px -3596px;
+        }
+    }
+    li.map:hover {
+        background: url(../img/barclays-sprite.png);
+    }
+    li.list.on {
+        background: url(../img/barclays-sprite.png) 0 -1536px;
+    }
+    li.list.on:hover {
+        background: url(../img/barclays-sprite.png) 0 -1508px;
+    }
+    li.list {
+        background: url(../img/barclays-sprite.png) 0 -1508px;
+        a {
+            background-image: none;
+        }
+    }
+    li.list:hover {
+        background: url(../img/barclays-sprite.png) 0 -1536px;
+    }
+    li.grid {
+        a {
+            background-position: 10px -1651px;
+        }
+    }
+}
+.toggle-view li.on a,.toggle-view li a:hover {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.search-results-wrapper .toggle-view li.on a, .search-results-wrapper.toggle-view li a:hover {
+    color: #fff;
+}
+.toggle-view li.grid.on a,.toggle-view li.grid a:hover {
+    background-position: 10px -1595px;
+}
+.search-results-wrapper .toggle-view li.list {
+    background: transparent;
+    a {
+        background-image: url(../img/sprite-icon.png);
+        background-position: 10px -1679px;
+    }
+    &.on a, & a:hover {
+        background-position: 10px -1623px;
+    }
+    &:hover {
+        background-image: none;
+    }
+}
+.element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 none !important;
+}

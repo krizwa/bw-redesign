@@ -1,0 +1,41 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 4. Page Header
+========================================================================== */
+
+.page-header {
+    .copy {
+        padding: 30px 30px 10px 30px;
+        text-align: center;
+        h1 {
+            font-size: 3em;
+            padding: 0;
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+
+/* `````` Making Liquid Responsive [begin] `````` */
+
+/* Activate Medium Screen (tablet behavior) - Portrait View  [iPad, GalaxyTab]*/
+@media only screen and (max-width: 980px) {
+
+}
+@media only screen and (min-width: 668px) and (max-width: 980px) {}
+
+/* Activate Small Screen (mobile behavior) - Landscape View [iPhone, GalaxyS4] */
+@media only screen and (max-width: 667px) {
+    .page-header {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 667px) {}
+
+/* Activate Small Screen (mobile behavior) - Portrait View [iPhone, GalaxyS4] */
+@media only screen and (max-width: 375px) {}
+/* ,,,,,, Making Liquid Responsive [end] ,,,,,,  */

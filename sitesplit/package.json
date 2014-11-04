@@ -1,0 +1,21 @@
+{
+  "name": "lessrefactoring",
+  "version": "0.0.0",
+  "description": "refactoring CSS",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-sass-convert": "~0.2.0",
+    "grunt-assets-versioning": "~0.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KR",
+  "license": "ISC"
+}

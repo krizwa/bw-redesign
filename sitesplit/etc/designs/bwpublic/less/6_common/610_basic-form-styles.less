@@ -1,0 +1,393 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 10. Basic Form Styles
+========================================================================== */
+
+.form-generic {
+    *zoom: 1;
+    padding: 0 30px 20px;
+    .clearfix();
+    .form-section {
+        padding: 0 0 10px;
+    }
+    .form-row {
+        *zoom: 1;
+        font-size: 13px;
+        margin-bottom: 10px;
+        .clearfix();
+        label {
+            display: block;
+            float: left;
+            width: 160px;
+            padding: 4px 10px 2px 0;
+        }
+        label.error {
+            *zoom: 1;
+            width: auto !important;
+            display: none;
+            color: #007eb6;
+            padding: 0 0 0 173px;
+            .clearfix();
+        }
+        .errorWrap {
+            *zoom: 1;
+            .clearfix();
+            label {
+                padding: 2px 0 0 !important;
+
+            }
+        }
+    }
+    
+    .form-col {
+        *zoom: 1;
+        padding-bottom: 10px;
+        font-size: 13px;
+        .clearfix();
+        label {
+            clear: both;
+            display: block;
+            width: auto;
+            padding: 0 0 5px;
+        }
+        label.error {
+            *zoom: 1;
+            width: auto !important;
+            display: none;
+            color: #007eb6;
+            padding: 0;
+        }
+        label.error:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    input.fieldOpt {
+        margin: 0;
+        *height: 13px;
+        *width: 13px;
+    }
+    input.fieldTxt, & input.fieldTxtSmall {
+        font-family: @font-expert-sans-regular;
+        float: left;
+        margin: 0 5px 0 0;
+        width: 200px;
+        padding: 6px 5px 6px;
+        border: 0;
+        border: 3px solid #ccc;
+        background: #ccc;
+        text-align: left !important;
+    }
+    input.fieldTxt:focus, & input.fieldTxtSmall:focus {
+        outline: none;
+        border: 3px solid #999;
+    }
+    input.fieldTxtSmall {
+        width: 40px;
+    }
+    textarea.fieldTxtLong {
+        font-family: @font-expert-sans-regular;
+        width: 386px;
+        height: 140px;
+        padding: 5px;
+        border: 3px solid #ccc;
+        background: #ccc;
+        resize: none;
+    }
+    textarea.fieldTxtLong:focus {
+        outline: none;
+        border: 3px solid #999;
+    }
+    select.large {
+        text-align: left;
+        width: 279px;
+    }
+    select.medium {
+        text-align: left;
+        width: 50px;
+    }
+    .fieldOption {
+        display: table;
+        float: left;
+        padding-top: 4px;
+        *padding-top: 5px;
+        label {
+            clear: none !important;
+            float: left;
+            width: auto;
+            margin-top: -1px;
+            padding: 3px 10px 0 12px;
+            line-height: 1.2em;
+            text-align: left;
+        }
+        .row {
+            *zoom: 1;
+            padding: 0 0 10px;
+            .clearfix();
+        }
+        .iradio_minimal-blue, & .icheckbox_minimal-blue {
+            float: left;
+        }
+        input.fieldOpt {
+            float: left;
+            outline: 0 none;
+        }
+    }
+    span.validator {
+        color: #333;
+    }
+    .hide {
+        display: none;
+    }
+}
+.lt-ie9 .form-generic .form-row label {
+    letter-spacing: 0;
+}
+
+.icheckbox_minimal-blue,.iradio_minimal-blue {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url(../img/blue.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.icheckbox_minimal-blue.focus,.icheckbox_minimal-blue:focus,.iradio_minimal-blue.focus,.iradio_minimal-blue:focus {
+    .box-shadow-style2(1px, white, 3px, black);
+}
+.lt-ie9 .icheckbox_minimal-blue.focus,.lt-ie9 .icheckbox_minimal-blue:focus,.lt-ie9 .iradio_minimal-blue.focus,.lt-ie9 .iradio_minimal-blue:focus {
+    outline: 2px solid #000 !important;
+    border: 0.1px solid #fff !important;
+}
+.icheckbox_minimal-blue.focus input,.icheckbox_minimal-blue:focus input,.iradio_minimal-blue.focus input,.iradio_minimal-blue:focus input {
+    outline: 0 none !important;
+}
+.icheckbox_minimal-blue {
+    background-position: 0 0;
+}
+.icheckbox_minimal-blue.hover {
+    background-position: -20px 0;
+}
+.icheckbox_minimal-blue.checked {
+    background-position: -40px 0;
+}
+.icheckbox_minimal-blue.disabled {
+    background-position: -60px 0;
+    cursor: default;
+}
+.icheckbox_minimal-blue.checked.disabled {
+    background-position: -80px 0;
+}
+.iradio_minimal-blue {
+    background-position: -100px 0;
+}
+.iradio_minimal-blue.hover {
+    background-position: -120px 0;
+}
+.iradio_minimal-blue.checked {
+    background-position: -140px 0;
+}
+.iradio_minimal-blue.disabled {
+    background-position: -160px 0;
+    cursor: default;
+}
+.iradio_minimal-blue.checked.disabled {
+    background-position: -180px 0;
+}
+
+.selectBox-dropdown {
+    min-width: 150px;
+    position: relative;
+    line-height: 1.1em;
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+    outline: none;
+    vertical-align: middle;
+    background: #ccc;
+    padding: 6px 0 5px;
+    display: inline-block;
+    cursor: default;
+    .selectBox-label {
+        font-size: 13px;
+        padding: 2px 9px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .selectBox-arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 49px;
+        height: 100%;
+        background: url(../img/selectBoxArrow.png) 50% center no-repeat;
+    }
+}
+.selectBox-dropdown:active,.selectBox-dropdown:hover {
+    border: 0;
+    outline: 0;
+}
+.selectBox-dropdown:focus {
+    .box-shadow-style2(1px, white, 3px, black);
+}
+.lt-ie9 .selectBox-dropdown:focus {
+    outline: 2px solid #000 !important;
+    border: 0.1px solid #fff !important;
+}
+
+.selectBox-dropdown.selectBox-menuShowing {
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.selectBox-dropdown-menu {
+    position: absolute;
+    z-index: 99999;
+    max-height: 200px;
+    min-height: 1em;
+    border: solid 1px #BBB;
+    background: #FFF;
+    .box-shadow (0px, 2px, 6px, 0.2); 
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.selectBox-inline {
+    min-width: 150px;
+    outline: none;
+    border: solid 1px #BBB;
+    background: #FFF;
+    display: inline-block;
+    .border-radius (4px);
+    overflow: auto;
+}
+.selectBox-inline:focus {
+    border-color: #666;
+}
+.selectBox-options,.selectBox-options LI,.selectBox-options LI A {
+    list-style: none;
+    display: block;
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+.selectBox-options {
+    li {
+        a {
+            line-height: 1.5;
+            font-size: 13px;
+            padding: 3px .5em;
+            white-space: nowrap;
+            overflow: hidden;
+            background: 6px center no-repeat;
+        }
+    }
+    li.selectBox-hover {
+        a {
+            background-color: #EEE;
+        }
+    }
+    li.selectBox-disabled {
+        a {
+            color: #888;
+            background-color: transparent;
+        }
+    }
+    li.selectBox-selected {
+        a {
+            background-color: #C8DEF4;
+        }
+    }
+    .selectBox-optgroup {
+        background: #EEE;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 0 .3em;
+        white-space: nowrap;
+    }
+}
+.selectBox.selectBox-disabled {
+    color: #888 !important;
+}
+.selectBox-dropdown.selectBox-disabled {
+    .selectBox-arrow {
+        opacity: .5;
+        filter: alpha(opacity=50);
+    }
+}
+.selectBox-inline.selectBox-disabled {
+    color: #888 !important;
+    .selectBox-options {
+        A {
+            background-color: transparent !important;
+        }
+    }
+}
+#submitForm, #continue {
+    outline: 0 none;
+}
+#submitForm:focus, #continue:focus {
+    .box-shadow-style2(1px, white, 3px, black); 
+}
+.lt-ie9 #submitForm:focus,.lt-ie9 #continue:focus {
+    outline: 2px solid #000 !important;
+    border: 0.1px solid #fff !important;
+}
+.frmTooltipWrap {
+    display: none;
+    min-height: 20px;
+    height: auto;
+    .border-radius(4px);
+    background: #6d6d6d url(../img/tooltipFrm.png) repeat-x bottom left;
+    z-index: 9999;
+    padding: 16px;
+    line-height: 1.30em;
+    position: absolute;
+    top: 300px;
+    right: -170px;
+    width: 223px;
+    text-align: center;
+    border: 3px solid #999;
+    span.tt-arrow {
+        position: relative !important;
+        display: inline-block;
+        width: 275px;
+        height: 17px;
+        background: url(../img/frmTooltipinverted.png) left top no-repeat;
+        top: 47px;
+    }
+    .content {
+        letter-spacing: 0;
+        margin-top: -19px;
+    }
+}
+.cssgradients .frmTooltipWrap {
+    .gradient (top, #ffffff, #e8e8e8);
+}
+.lt-ie8 .frmTooltipWrap span.tt-arrow {
+    margin-left: -272px;
+}
+.tooltipIndicator {
+    background: url(../img/tooltip.png) no-repeat;
+    display: inline-block;
+    height: 20px;
+    margin-left: 8px;
+    position: relative;
+    text-indent: -9999px;
+    width: 20px;
+}
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_minimal-blue, .iradio_minimal-blue {
+        background-image: url(../img/blue@2x.png);
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}

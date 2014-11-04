@@ -1,0 +1,67 @@
+@import "../1_global/00_required.less";
+@var1: #ffffff;
+@var2: #646464;
+@var3: #333333;
+/* ==========================================================================
+= 2. Disclaimers
+========================================================================== */
+.disclaimer {
+    text-align: center;
+    p {
+        font-size: 0.91667em;
+        margin: 0;
+    }
+    strong {
+        background: url(../img/legacy-bg-333-70.png) repeat;
+        color: #fff;
+        display: inline-block;
+        font-family: @font-expert-sans-regular; 
+        padding: 0.2em 1em;
+    }
+}
+.rgba .disclaimer strong {
+    background: rgba(122, 122, 122, 0.6);
+}
+.disclaimer a:focus, .search-pagination a:focus {
+    .box-shadow-style2(2px, white, 3px, black);
+}
+.lt-ie9 .disclaimer a:focus, .lt-ie9 .search-pagination a:focus {
+    outline: 3px solid #000 !important;
+}
+.search-pagination {
+    text-align: center;
+    left: 43%;
+    position: absolute;
+    top: 0;
+    p {
+        font-size: 1.08333em;
+        margin: 0;
+    }
+    strong {
+        color: #fff;
+        display: inline-block;
+        background-image: none;
+        background: #646464;
+        font-family: @font-expert-sans-light;
+        padding: 0.2em 1.5em 0.2em;
+    }
+    span {
+        font-family: @font-expert-sans-bold;
+    }
+    &-bottom {
+        margin: 10px 0 -4px;
+        left: auto;
+        position: static;
+        top: auto;
+    }
+}
+.rgba .search-pagination strong {
+    background: #646464;
+}
+.listing .disclaimer {
+    margin-bottom: 8px;
+    strong {
+        background: #333;
+        padding: 0.4em 2em;
+    }
+}

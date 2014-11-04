@@ -1,0 +1,71 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 27. C303 - Add page to dock
+========================================================================== */
+
+.add-to-dock {
+    .gradient-bc (top, #007eb6, #3196c3, #026794);
+    .transition (all, 0.1s, ease-out);
+    border: 1px solid #007eb6;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.125em;
+    left: 0px;
+    line-height: 28px;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 30px;
+    text-transform: uppercase;
+    top: 0px;
+    white-space: nowrap;
+    width: 28px;
+    &:hover {
+        text-decoration: none;
+        width: 100% - (2 * 0.411523%);
+    }
+    &:after {
+        content: "+";
+        display: block;
+        font-size: 2.16667em;
+        position: absolute;
+        text-align: center;
+        text-indent: 0;
+        top: 0;
+        width: 28px;
+    }
+    &:focus {
+        .box-shadow-style2(1px, white, 3px, black);
+    }
+}
+.no-js .add-to-dock {
+    display: none;
+}
+.lt-ie9 .add-to-dock:focus {
+    outline: 2px solid #000 !important;
+    border: 0.1px solid #fff !important;
+}
+.lt-ie8 .add-to-dock {
+    background-image: url(../img/add-to-doc-IE.png);
+    background-repeat: no-repeat;
+    background-position: -4px -6px;
+}
+.add-to-dock-added {
+    .gradient-bc (top, #646464, #808080, #555555);
+    border-color: #646464;
+    &:after {
+        content: "x";
+        font-size: 1em;
+    }
+    &:hover {
+        text-decoration: none;
+        width: 100% - (2 * 0.411523%);
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .add-to-dock {
+        font-family: @font-expert-sans-extra-light;
+    }
+}

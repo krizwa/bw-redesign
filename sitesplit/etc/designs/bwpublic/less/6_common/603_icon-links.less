@@ -1,0 +1,135 @@
+@import "../1_global/00_required.less"; 
+
+@var1: #ffffff;
+@var2: #3E3E3E;
+@var3: #828282;
+@var4: #666666;
+/* ==========================================================================
+= 3. Icon Links
+========================================================================== */
+.footer-icon {
+    border: 0;
+    direction: ltr;
+    display: block;
+    height: 22px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+    width: 22px;
+}
+.icon {
+    &-news {
+        background: transparent url(../img/sprite-icon.png) no-repeat;
+        border: 0;
+        direction: ltr;
+        display: block;
+        overflow: hidden;
+        text-align: left;
+        text-indent: -999em;
+        *line-height: 0;
+        background-position: 0 -817px;
+        display: block;
+        height: 22px;
+        width: 22px;
+    }
+    &-linkedin {
+        background: transparent url(../img/sprite-icon.png) no-repeat;
+        border: 0;
+        direction: ltr;
+        display: block;
+        overflow: hidden;
+        text-align: left;
+        text-indent: -999em;
+        *line-height: 0;
+        background-position: 0 -1265px;
+        height: 22px;
+        width: 22px;
+    }
+    &-twitter {
+        background: transparent url(../img/sprite-icon.png) no-repeat;
+        border: 0;
+        direction: ltr;
+        display: block;
+        overflow: hidden;
+        text-align: left;
+        text-indent: -999em;
+        *line-height: 0;
+        background-position: 0 -1041px;
+        display: block;
+        line-height: 22px;
+        width: 22px;
+    }
+    &-facebook {
+        background: transparent url(../img/sprite-icon.png) no-repeat;
+        border: 0;
+        direction: ltr;
+        display: block;
+        overflow: hidden;
+        text-align: left;
+        text-indent: -999em;
+        *line-height: 0;
+        background-position: 0 -1489px;
+        height: 22px;
+        width: 22px;
+    }
+    &-year {
+        background: transparent url(../img/sprite-icon.png) no-repeat;
+        border: 0;
+        direction: ltr;
+        display: block;
+        overflow: hidden;
+        text-align: left;
+        text-indent: -999em;
+        *line-height: 0;
+        background-position: 115px -2130px;
+        padding-left: 26px;
+        text-indent: 0;
+    }
+}
+.close {
+    background: transparent url(../img/barclays-sprite.png) -277px -20px no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+span.download-pdf {
+    background: transparent url(../img/sprite-icon.png) no-repeat;
+    background-position: right -2801px;
+    padding-right: 19px;
+}
+span.button-pdf {
+    display: inline-block;
+    padding: 0 !important;
+    a {
+        .border-radius (4px);
+        background: @color-dusty-gray url(../img/sprite-icon.png) no-repeat right -3397px;
+        color: #fff;
+        float: left;
+        font-size: 1em;
+        display: inline-block;
+        padding: 4px 1em;
+        padding-right: 30px;
+        text-transform: none;
+    }
+}
+a.external {
+    background: transparent url(../img/sprite-icon.png) no-repeat;
+    background-position: right -2997px;
+    padding-right: 13px;
+}
+span.rte-button a, span.rte-button {
+    .border-radius (4px);
+    background-color: #3E3E3E;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.third-party-module span.rte-button a, .third-party-module span.rte-button {
+    background-color: #828282;
+}
+.story-content span.rte-button a, .story-content span.rte-button {
+    background-color: #666666;
+}

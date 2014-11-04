@@ -1,0 +1,104 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 1. Typography
+========================================================================== */
+
+body {
+    color: @body-color;
+    font-family: @body-font;
+    font-size: 0.750em;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+    min-width: 980px;
+}
+h1 {
+    color: black;
+    font-family: @font-expert-sans-extra-light;
+    font-size: 4.58333em;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.2;
+    margin: 0 0 0.4em 0;
+    padding: 0 60px 0 0;
+}
+h2 {
+    color: black;
+    font-family: @font-expert-sans-regular;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 0em;
+    line-height: 1.2;
+    margin: 0 0 0.7em;
+}
+/* Aside content header */
+
+
+h3 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.7em;
+}
+p {
+    margin-bottom: 1.6em;
+}
+strong {
+    font-family: @font-expert-sans-bold;
+    font-weight: normal;
+}
+ol {
+    color: black;
+    font-size: 1.33333em;
+    li {
+        margin-bottom: 0.6em;
+    }
+}
+ul {
+    margin-bottom: 1.6em;
+}
+.generic-content-header {
+    h1 {
+        font-family: @font-expert-sans-light;
+        font-size: 4.58333em;
+    }
+    p {
+        font-size: 1.25em;
+    }
+}
+.stand-first {
+    color: #000 !important;
+    display: block;
+    font-family: @font-expert-sans-regular;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6 !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+}
+/* ==========================================================================
+= 2. links
+========================================================================== */
+
+a {
+    color: #007eb6;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &.skip-nav {
+        float: right;
+        text-indent: -9999999px;
+    }
+    &:focus {
+    //    outline: 2px solid #000; //KR
+    //    border: 0.1px solid #fff; //KR
+    }
+}
+.views, .list-views, .social-views {
+    display: none !important;
+}
+.date {
+    border-right: 0 none !important;
+}

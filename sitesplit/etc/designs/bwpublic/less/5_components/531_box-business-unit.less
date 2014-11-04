@@ -1,0 +1,74 @@
+@import "../1_global/00_required.less";
+.box {
+    position: relative;
+    .content {
+        text-align: center;
+        padding: 30px 30px 20px 30px;
+    }
+    figure {
+        img {
+            width: 100%;
+        }
+    }
+    &.style-primary {
+        background-color: #8d0535;
+    }
+    &.style-secondary {
+        background-color: #e5e5e5;
+    }
+    &.style-tertiary {
+        background-color: #4e433a;
+    }
+}
+
+/* Activate Medium Screen (tablet behavior) - Portrait View  [iPad, GalaxyTab]*/
+@media only screen and (max-width: 980px) {
+    .box {
+        .clearfix();
+        figure {
+            float: left;
+            width: 35%;
+            margin-right: 5%;
+            overflow: hidden;
+            img{
+            	width: auto;
+            }
+        }
+        .content {
+            float: right;
+            width: 55%;
+            padding: 20px 0px;
+            margin-right: 5%;
+        }
+    }
+}
+@media only screen and (min-width: 668px) and (max-width: 980px) {}
+
+/* Activate Small Screen (mobile behavior) - Landscape View [iPhone, GalaxyS4] */
+@media only screen and (max-width: 667px) {
+	.box {
+        figure {
+            width: 45%;
+        }
+        .content {
+            width: 45%;
+           }
+       }
+   
+}
+@media only screen and (min-width: 376px) and (max-width: 667px) {}
+
+/* Activate Small Screen (mobile behavior) - Portrait View [iPhone, GalaxyS4] */
+@media only screen and (max-width: 375px) {
+    .box {
+        figure {
+            display: none;
+        }
+        .content {
+            float: none;
+            width: auto;
+            padding: 20px;
+        }
+    }
+}
+/* ,,,,,, Making Liquid Responsive [end] ,,,,,,  */

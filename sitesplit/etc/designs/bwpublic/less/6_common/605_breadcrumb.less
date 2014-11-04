@@ -1,0 +1,50 @@
+@import "../1_global/00_required.less";
+@var1: #ffffff;
+/* ==========================================================================
+= 5. Breadcrumb
+========================================================================== */
+.breadcrumb {
+    color: #fff;
+    font-size: 1.08333em;
+    letter-spacing: 0;
+    list-style-type: none;
+    margin: 0 auto 8px;
+    padding: 0;
+    width: 964px;
+    li {
+        display: inline;
+    }
+    li:after {
+        content: " /";
+    }
+    li:last-child:after {
+        content: none;
+    }
+    a {
+        color: #fff;
+        font-family: @font-expert-sans-bold;
+        text-decoration: underline;
+    }
+    a:focus {
+        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        -moz-box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+        box-shadow: 0 0 0 1px white, 0 0 0 3px black;
+    }
+}
+.lt-ie9 {
+    .breadcrumb {
+        li + li:before {
+            content: " /";
+        }
+        li:after {
+            background: none !important;
+            content: none;
+        }
+        li.last {
+            background-image: none;
+        }
+        a:focus {
+            outline: 2px solid #fff !important;
+        }
+    }
+}

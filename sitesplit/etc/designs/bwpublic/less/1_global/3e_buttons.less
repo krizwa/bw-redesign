@@ -1,0 +1,37 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= buttons 
+========================================================================== */
+
+.cta, .cta-primary, .cta-secondary {
+    .border-radius (2px);
+    color: #fff;
+    display: inline-block;
+    font-family: "ExpertSansBold", Helvetica, Arial;
+    letter-spacing: 0.1em;
+    padding: 5px 0px 3px 0px;
+    width: 182px;
+    text-align: center;
+}
+.cta-primary {
+    .gradient-bc (top, #0b90c9, #149fda, #017fb9);
+    &:hover {
+        .gradient-bc (top, #0b90c9, #017fb9, #149fda);
+    }
+}
+.cta, .cta-secondary {
+    .gradient-bc (top, #00395e, #01385e, #01385e);
+    &:hover {
+        .gradient-bc (top, #00395e, #01385e, #01385e);
+    }
+}
+/* Activate Medium Screen (tablet behavior) - Portrait View  [iPad, GalaxyTab]*/
+
+@media only screen and (max-width: 980px) {} @media only screen and (min-width: 668px) and (max-width: 980px) {}
+/* Activate Small Screen (mobile behavior) - Landscape View [iPhone, GalaxyS4] */
+
+@media only screen and (max-width: 667px) {} @media only screen and (min-width: 376px) and (max-width: 667px) {}
+/* Activate Small Screen (mobile behavior) - Portrait View [iPhone, GalaxyS4] */
+
+@media only screen and (max-width: 375px) {}
+/* ,,,,,, Making Liquid Responsive [end] ,,,,,,  */

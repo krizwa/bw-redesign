@@ -1,0 +1,148 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 4. C201 - Promo
+========================================================================== */
+
+.promo {
+    outline: 0;
+    margin: 1px 0 8px 0;
+    position: relative;
+    text-align: center;
+    .copy-wrapper {
+        padding: 20px 15px 55px 15px;
+        position: relative;
+    }
+    h3 {
+        font-family: "ExpertSansBold", Helvetica, Arial;
+        font-size: 1.16667em;
+        letter-spacing: 0.2em;
+        line-height: 1.2;
+        padding: 0 15px;
+        text-transform: uppercase;
+        .lt-ie9 & {
+            letter-spacing: 0.17em;
+        }
+    }
+    figure{
+        
+    }
+    .add-to-dock {
+        color: #fff;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+    }
+    .cta-wrapper {
+        bottom: 15px;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+}
+.lt-ie9 {
+    .promo:hover .add-to-dock, & .promo:hover .add-to-dock-added {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
+        opacity: 100;
+    }
+    & .promo .snippet p {
+        letter-spacing: 0;
+    }
+}
+.promo-no-cta .cta-wrapper, .promo-no-snippet .snippet, .promo-no-image figure {
+    display: none;
+}
+.promo-bg-color-1, .quote-bg-color-1, .promo-bg-color-1.promo-large-wide .copy-wrapper, .promo-service-carousel, .promo-service-carousel .copy-wrapper {
+    //background: url(../img/legacy-bg-fff-gradient.png) repeat-x bottom left;
+}
+.promo-bg-color-1 {
+    background-color: #00395C;
+    color: #FFF;
+    h3 {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: rgba(0, 57, 92, 0.8);
+    }
+}
+.promo-bg-color-2 {
+    background-color: #58595B;
+    color: #FFF;
+    h3 {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: rgba(88, 89, 91, 0.8);
+    }
+}
+.promo-bg-color-3 {
+    background-color: #00AEEF;
+    color: #FFF;
+    h3 {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: rgba(0, 174, 239, 0.8);
+    }
+}
+.promo-bg-color-4 {
+    background-color: #FFF;
+    color: #000;
+    h3 {
+        color: #000;
+    }
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+.promo-bg-color-5 {
+    background-color: #000000;
+    color: #FFF;
+    h3 {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+.promo-bg-color-6 {
+    background-color: #9D063B;
+    color: #FFF;
+    h3 {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: rgba(157, 6, 59, 0.8);
+    }
+}
+.promo-bg-color-7 {
+    background-color: #E5801D;
+    color: #FFF;
+    h3 {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: rgba(229, 128, 29, 0.8);
+    }
+}
+.promo-bg-color-8 {
+    background-color: #FEBE10;
+    color: #000;
+    h3 {
+        color: #000;
+    }
+    &:hover {
+        background-color: rgba(254, 190, 16, 0.8);
+    }
+}
+.promo-bg-color-9 {
+    background-color: #AB9C8F;
+    color: #FFF;
+    h3 {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: rgba(171, 156, 143, 0.8);
+    }
+}

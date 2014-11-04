@@ -1,0 +1,86 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 1. Buttons, tags and filters 
+========================================================================== */
+
+.button, .list-filters ul li a, .tag-cloud a {
+    .border-radius (4px);
+    background-color: @color-mine-shaft-appr;
+    color: @color-white;
+    display: block;
+    padding: 0.2em 1em;
+}
+.lt-ie9 .tag-cloud a {
+    padding: 0.2em 0.5em;
+}
+.button-gray {
+    &-light {
+        .border-radius (4px);
+        background-color: @color-dove-gray;
+        color: @color-white;
+        display: inline-block;
+        letter-spacing: 0.1em;
+        min-width: 162px;
+        padding: 0.35em 1em;
+    }
+    &-light2 {
+        .border-radius (4px);
+        .gradient-bc(top, @color-dove-gray, @color-gray-solid, @color-emperor);
+        padding: 0.25em 1em 0.30em;
+    }
+    &-dark {
+        .border-radius (4px);
+        background: #3a3b3a url(../img/btn-bg-gray-dark.png) repeat-x bottom left;
+        padding: 0.25em 1em 0.30em;
+    }
+}
+.cssgradients .button-gray-dark {
+    .gradient(top, #525252, #3c3e3d)
+}
+.button {
+    text-transform: uppercase;
+    &:focus {
+        .box-shadow-style2(1px, white, 3px, black);
+    }
+}
+.list-filters ul li a {
+    text-transform: none;
+}
+a.button-pdf {
+    .border-radius (4px);
+    background: @color-mine-shaft-appr url(../img/sprite-icon.png) no-repeat right -3397px;
+    color: @color-white;
+    display: inline-block;
+    padding: 0.15em 1em;
+    padding-right: 30px;
+    text-transform: none;
+}
+#load-more {
+    .gradient(top, @color-alabaster, @color-silver-close);
+    border: 1px solid@color-silver-chalice;
+    clear: both;
+    color: @color-black;
+    display: block;
+    font-family: @font-expert-sans-bold;
+    height: 25px;
+    letter-spacing: 0.2em;
+    line-height: 25px;
+    margin: 53px auto 30px auto;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 312px;
+    &:hover {
+        text-decoration: none;
+    }
+    &.disabled {
+        display: none;
+    }
+}
+.no-cssgradients #load-more, .cssgradients #load-more {
+    background: url(../img/legacy-bg-fbfbfb-c8c8c8.png) repeat-x;
+}
+.search-results #load-more {
+    margin: 18px auto 29px auto;
+}

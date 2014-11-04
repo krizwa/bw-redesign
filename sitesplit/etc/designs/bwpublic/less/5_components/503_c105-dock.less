@@ -1,0 +1,758 @@
+@import "../1_global/00_required.less";
+
+/* ==========================================================================
+= 3. C105 - Dock 
+========================================================================== */
+
+.dock-container {
+    .transition (all, 0.6s, ease-in-out);
+    background: #272727;
+    border-top: 6px solid #272727;
+    bottom: 0px;
+    height: 0px;
+    left: 0px; 
+    right: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 101;
+    a {
+        outline: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #fff, 0 0 0 3px #000;
+    }
+}
+.dock-container.dock-disabled, .no-js .dock-container {
+    height: 0px;
+}
+.lt-ie9 .dock-container a:focus {
+    outline: 1px solid #fff !important;
+}
+.dock-container.dock-open {
+    height: 400px;
+}
+.content-primary .dock-container, .content-primary .dock-handle-container {
+    position: relative;
+    width: 964px;
+}
+.cookie-message-pop {
+    display: none;
+    float: left;
+    width: 750px;
+    .content-wrap {
+        *zoom: 1;
+        background: none;
+        margin: 0 auto;
+        padding: 3px 0;
+        width: 966px;
+        .clearfix();
+        .close {
+            background: url(../img/barclays-sprite.png) -277px -9px no-repeat;
+            float: left;
+            height: 11px;
+            margin: 2px 12px 0 0;
+            width: 11px;
+        }
+        .content {
+            color: #fff;
+            float: left;
+            font-size: 1em;
+            letter-spacing: -0.01em;
+            line-height: 1.1em;
+            width: 750px;
+            a {
+                color: #fff;
+                text-decoration: underline;
+            }
+            .dock-alert-cookie-info {
+                float: left;
+                font-size: 12px;
+                line-height: 12px;
+                padding: 11px 0 0 6px;
+                text-align: left;
+                width: 705px;
+                a {
+                    text-decoration: underline;
+                }
+            }
+            p {
+                margin: 0;
+                padding: 7px 3px !important;
+            }
+        }
+        .field-cookie {
+            float: left;
+            padding: 5px 0;
+            width: 15px;
+            height: 16px;
+            label {
+                display: none;
+            }
+        }
+    }
+}
+.dock-handle-container {
+    margin: -43px auto 0;
+    width: 980px;
+    height: 42px;
+}
+.cookie-overlay {
+    display: none;
+}
+.dock-handle {
+    .border-radius-custom (2px, 2px, 0, 0); 
+    background: #272727;
+    cursor: pointer;
+    float: right;
+    height: 27px;
+    margin-right: -10px;
+    padding: 6px 0.5em;
+    width: 187px;
+    &:focus {
+        .box-shadow-style2(1px, white, 3px, black);
+        outline: 0;
+    }
+    .indicator {
+        background: transparent url(../img/barclays-sprite.png) 0 -2615px no-repeat;
+        height: 30px;
+        padding: 0 0 0 37px;
+        .dock-open & {
+            background-position: 0 -2645px;
+        }
+    }
+    h2 {
+        color: #fff;
+        float: left;
+        font-family: @font-expert-sans-regular;
+        font-size: 1.25em;
+        letter-spacing: 0.085em;
+        line-height: 1;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        .dock-disabled &, .no-js & {
+            display: none;
+        }
+    }
+    p {
+        clear: left;
+        color: #999;
+        font-size: 0.91667em;
+        float: left;
+        line-height: 1;
+        width: 140px;
+        .dock-disabled &, .no-js & {
+            display: none;
+        }
+    }
+    .dock-contact {
+        .border-radius (2px);
+        background: #5f6362;
+        color: #fff;
+        float: right;
+        font-size: 0.91667em;
+        margin: 0 0 0.2em 2em;
+        padding: 0.4em 1.2em;
+        text-transform: uppercase;
+    }
+}
+.cssgradients {
+    .dock-handle {
+        .gradient (top, #474747, #272727);
+        .dock-contact {
+            .gradient (top, #919393, #626564);
+        }
+    }
+    .dock-cookie-overlay .cookie-overlay {
+        .gradient (top, #6d6d6d, #5b5b5b);
+    }
+    .dock-alert {
+        .gradient (top, #ffffff, #eaeaea);
+    }
+    .dock-content {
+        .dock-info-tour li {
+            .gradient (top, #dbdbdb, #cacaca);
+        }
+        .jcarousel #dock-info li.deactive a.unread {
+            .gradient (top, #808080, #727272);
+        }
+    }
+    .dock-collection .unread {
+        .gradient (bottom, #fece01, #e1b701);
+    }
+    .dock-recommended {
+        .gradient (left, #393939, #272727);
+        .dock-recommended-footer {
+            .gradient (left, #363636, #272727);
+        }
+    }
+}
+.lt-ie9 .dock-handle:focus {
+    outline: 2px solid #fff !important;
+    border: 0.1px solid #000 !important;
+}
+.dock-disabled .dock-handle .dock-contact, .no-js .dock-handle .dock-contact {
+    margin-left: 0;
+}
+.dock-cookie-overlay {
+    .dock-handle-container {
+        margin-top: 12px;
+    }
+    .cookie-overlay {
+        display: block;
+        background: #6d6d6d url(../img/cookie-message-legacy-bg.png) repeat-x bottom left;
+        height: 45px;
+        margin: -51px;
+    }
+}
+.dock-message {
+    width: 100%;
+}
+.dock-alert {
+    .border-radius (5px);
+    background: #fff;
+    border: 5px solid #999;
+    display: none;
+    padding: 15px 10px;
+    position: absolute;
+    right: 252px;
+    bottom: 55px;
+    line-height: 1.4em;
+    text-align: center;
+    width: 175px;
+    .dock-open & {
+        bottom: 455px;
+    }
+    .dock-alert-info {
+        padding-bottom: 10px;
+    }
+    .dock-alert-cookie {
+        *zoom: 1;
+        .clearfix();
+    }
+    .field-cookie {
+        float: left;
+        width: 15px;
+        padding: 4px 0 0;
+        label {
+            display: none;
+        }
+    }
+    .dock-alert-cookie-info {
+        float: left;
+        margin: 0 0 5px;
+        padding: 0 0 0 4px;
+        width: 148px;
+        text-align: left;
+        a {
+            text-decoration: underline;
+        }
+    }
+    .pointer {
+        bottom: -20px;
+        height: 20px;
+        left: 85px;
+        position: absolute;
+        background: url(../img/barclays-sprite.png) -247px 0 no-repeat;
+        width: 30px;
+    }
+    .close {
+        height: 10px;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        width: 11px;
+    }
+}
+.dock-alert.dock-alert-visible {
+    display: block;
+}
+.dock-content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+    & h3, & p, & a {
+        color: #fff;
+    }
+    .button-gray-dark {
+        color: #797979;
+        cursor: default;
+        outline: none;
+        text-decoration: none;
+    }
+    .button-gray-dark:focus {
+        border: 0 none !important;
+        outline: 0 !important;
+    }
+    .button-gray-dark:hover {
+        text-decoration: none !important;
+    }
+    .button-gray-light {
+        color: #fff;
+        outline: none;
+    }
+    .dock-info {
+        width: 638px;
+        height: 266px;
+        background: url(../img/barclays-sprite.png) 137px -687px transparent no-repeat;
+        p.info1 {
+            float: left;
+            font-size: 1.25em;
+            line-height: 1.20em;
+            letter-spacing: 0.01em;
+            text-align: center;
+            margin: 181px 125px 0 89px;
+            width: 150px;
+        }
+        p.info2 {
+            float: left;
+            font-size: 1.25em;
+            line-height: 1.20em;
+            letter-spacing: 0.01em;
+            text-align: center;
+            width: 182px;
+            margin-top: 171px;
+        }
+        ul.dock-collection {
+            display: none;
+        }
+    }
+    .dock-info-tour {
+        width: 615px;
+        background-position: 242px -1019px;
+        p.info1 {
+            margin: 128px 86px 0 198px;
+        }
+        p.info2 {
+            margin-top: 134px;
+            width: 172px;
+        }
+        ul {
+            display: block !important;
+            width: 150px !important;
+        }
+        li {
+            background: #d8d8d8 url(../img/dock-item-deactive-legacy-bg.png) repeat-x bottom left;
+            height: 196px;
+            .content {
+                border: none;
+                color: #313131;
+                padding-top: 42px;
+                h3 {
+                    color: #000;
+                    font-size: 1.16667em;
+                    margin-bottom: 9px;
+                    text-decoration: none !important;
+                }
+                p {
+                    line-height: 1.33333em;
+                }
+            }
+        }
+    }
+    .jcarousel #dock-info li.deactive {
+        a {
+            cursor: default !important;
+            outline: none !important;
+            text-decoration: none !important;
+        }
+        a.unread {
+            background: #767676 url(../img/dock-item-deactive-legacy-bg.png) repeat-x bottom left;
+            border-top: 1px solid #a9a9a9 !important;
+            cursor: default;
+            span {
+                border-top: 1px solid #b2b2b2 !important;
+            }
+        }
+    }
+}
+.dock-carousel-container.carousel-disabled .jcarousel-prev, .dock-carousel-container.carousel-disabled .jcarousel-pagination, .dock-carousel-container.carousel-disabled .jcarousel-next {
+    display: none;
+}
+.js {
+    .dock-carousel-container {
+        height: 271px;
+        overflow: hidden;
+        .jcarousel {
+            margin-bottom: 6px;
+            overflow: visible;
+            width: 640px;
+        }
+        & .jcarousel-prev, & .jcarousel-pagination, & .jcarousel-next {
+            float: right;
+        }
+        & .jcarousel-prev, & .jcarousel-next {
+            background: #313131 url(../img/sprite-icon.png) left -5600px no-repeat;
+            height: 60px;
+            width: 59px;
+            margin: 2px 0 0;
+            text-indent: -999em;
+        }
+        .jcarousel-next {
+            background-position: right -5600px;
+            margin-right: 60px;
+        }
+        .jcarousel-pagination {
+            margin: 20px 20px 0;
+            text-align: center;
+            width: 480px;
+            a {
+                background-position: left -4900px;
+            }
+            a.active {
+                background-position: right -4800px;
+            }
+        }
+    }
+}
+.dock-collection-container {
+    *zoom: 1;
+    width: 700px;
+    .clearfix();
+    .dock-filters {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        li {
+            border-right: 1px solid black;
+            float: left;
+            margin-right: 5px;
+            padding-right: 5px;
+            a {
+                color: #a5acaa;
+                outline: none;
+            }
+            a:focus {
+                outline: 1px dotted #a5acaa;
+            }
+            a.filterActive {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+        li:last-child {
+            border-right: 0px;
+        }
+    }
+    .dock-remove-all {
+        float: right;
+        outline: none;
+    }
+    .dock-remove-all:focus {
+        outline: 1px dotted #a5acaa;
+    }
+}
+.dock-collection {
+    list-style-type: none;
+    padding: 0;
+    li {
+        background: #fff;
+        color: "ExpertSansRegular", Helvetica, Arial;
+        float: left;
+        height: 195px;
+        margin-right: 8px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 154px;
+        & h3, & p, & a {
+            color: black;
+        }
+        .content {
+            border-top: 1px solid #c0c0c0;
+            display: block;
+            padding: 26px 10px 10px;
+            line-height: 1.5em;
+        }
+        a:hover {
+            text-decoration: none;
+            h3 {
+                text-decoration: underline;
+            }
+        }
+        h3 {
+            font-size: 1em;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+        }
+        p {
+            margin: 0;
+        }
+        .content-type {
+            color: #007eb6;
+            font-family: @font-expert-sans-bold;
+            text-transform: uppercase;
+        }
+    }
+    .unread {
+        background: #e1b701 url(clientlib1.7/bw_com/img/legacy-bg-yellow-fece01-e1b701.png) repeat-x bottom left;
+        border-top: 1px solid #c0c0c0;
+        bottom: 0;
+        left: 0;
+        color: #403e35;
+        display: block;
+        position: absolute;
+        width: 154px;
+        line-height: 1em;
+        span {
+            border-top: 1px solid #ffe887;
+            display: block;
+            padding: 4px 4px 5px;
+        }
+    }
+    .remove-from-dock {
+        .gradient-bc (top, #858b89, #b5bbb9, #858b89);
+        border: 1px solid #979d9b;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.16667em;
+        height: 28px;
+        left: 0px;
+        line-height: 28px;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        top: 0px;
+        width: 28px;
+    }
+}
+.dock-collection-header {
+    border-bottom: 1px solid #5d5d5d;
+    line-height: 1;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 17px 0 12px;
+    width: 640px;
+}
+.dock-collection-header-disabled a {
+    color: #575757;
+    cursor: default;
+    text-decoration: none !important;
+}
+.dock-collection-footer {
+    *zoom: 1;
+    border-top: 1px solid #5d5d5d;
+    padding: 15px 0;
+    width: 640px;
+    .clearfix();
+    a {
+        float: left;
+        margin-right: 14px;
+    }
+}
+.dock-carousel-container .jcarousel {
+    height: 195px;
+}
+.dock-recommended {
+    .transition (all, 0.6s, ease-in-out);
+    background: #272727;
+    border-left: 60px solid #272727;
+    color: #fff;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 52px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 228px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    h3 {
+        border-bottom: 1px solid #5d5d5d;
+        font-family: @font-expert-sans-bold;
+        font-size: 1.25em;
+        margin-bottom: 10px;
+        padding: 8px 0 7px 0;
+        text-transform: uppercase;
+    }
+    .dock-recommended-handle {
+        background: #302f2f url(../img/sprite-icon.png) center -5215px no-repeat;
+        border: 1px solid #000;
+        border-width: 0 1px;
+        display: block;
+        height: 100%;
+        left: 0px;
+        outline: none;
+        position: absolute;
+        top: 0;
+        text-indent: -5000px;
+        width: 30px;
+    }
+    .dock-recommended-footer {
+        background: #272727;
+        border-top: 1px solid #5d5d5d;
+        bottom: -8px;
+        left: 52px;
+        padding: 15px 0 20px 0;
+        position: absolute;
+        right: 0px;
+        .alternative {
+            display: none;
+        }
+        span {
+            display: inline-block;
+            color: #bfbfbf;
+            float: none;
+            margin: 0 6px;
+            width: auto;
+        }
+    }
+    .dock-recommended-footer.dock-footer-alternative {
+        .alternative {
+            display: inline-block;
+        }
+        .default {
+            display: none;
+        }
+        a {
+            color: #bfbfbf;
+        }
+        a.active {
+            color: #fff;
+            cursor: default;
+            font-weight: 600;
+            text-decoration: none !important;
+            outline: none !important;
+        }
+    }
+    li {
+        border-bottom: 1px solid #5d5d5d;
+        float: left !important;
+        margin-bottom: 20px;
+        padding: 0 10px 12px 0;
+        width: 216px;
+        height: 39px;
+    }
+    & h4, & .content-type {
+        font-family: @font-expert-sans-light;
+        font-size: 1em;
+        font-weight: normal;
+        letter-spacing: 0.2em;
+        line-height: 1.2em;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .content-type {
+        display: block;
+        font-family: @font-expert-sans-bold;
+        margin-top: -4px;
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+        letter-spacing: 0.06em;
+        margin-bottom: 0;
+    }
+    p.count {
+        line-height: 1em;
+    }
+    span {
+        display: block;
+        float: left;
+        width: 178px;
+    }
+    .dock-recommended-content ul li div {
+        display: block;
+        float: left;
+        width: 178px;
+    }
+}
+.rgba .dock-recommended {
+    border-left-color: rgba(39, 39, 39, 0.6);
+    .background-clip(padding, padding-box);
+}
+.dock-recommended-open {
+    border-left: 0px;
+    width: 722px;
+    .dock-recommended-handle {
+        background-position: center -5616px;
+    }
+    ul li {
+        display: block!important;
+    }
+}
+.dock-recommended .add-to-dock, .dock-recommended .add-collection-to-dock {
+    background-color: #007eb6;
+    border: 1px solid #007eb6;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 2.33333em;
+    margin-right: 8px;
+    line-height: 28px;
+    text-align: center;
+    height: 28px;
+    width: 28px;
+}
+.dock-recommended .add-to-dock:hover, .dock-recommended .add-collection-to-dock:hover {
+    text-decoration: none;
+}
+.no-csscolumns .dock-recommended-open ul {
+    li:nth-child(3n+3) {
+        border-width: 1px;
+    }
+    li:nth-child(n+7) {
+        border-width: 0px;
+    }
+}
+.csscolumns .dock-recommended-open ul {
+    width: 708px;
+    li {
+        float: none;
+    }
+}
+#dock-recommended-new {
+    .dock-recommended-intro {
+        float: left;
+        margin-bottom: 30px;
+        width: 234px;
+    }
+    ul {
+        height: 195px;
+    }
+}
+#dock-recommended-related {
+    display: none;
+    ul {
+        margin: 29px 0 0;
+        height: 297px;
+        height: 292px;
+    }
+    li {
+        height: 110px;
+        margin: 0 0 29px;
+    }
+    p {
+        clear: both;
+        margin: 8px 0 0;
+    }
+    .add-to-dock {
+        float: left;
+        font-size: 1em;
+        margin-right: 8px;
+        position: static;
+    }
+    .add-to-dock:hover {
+        width: 28px;
+    }
+    .add-to-dock:after {
+        position: static;
+    }
+    .add-to-dock-added {
+        .gradient-bc (top, #858b89, #b5bbb9, #858b89);
+        border-color: #979d9b;
+    }
+}
