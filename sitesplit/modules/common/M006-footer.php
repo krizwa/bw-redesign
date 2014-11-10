@@ -55,15 +55,15 @@
                                         <p>
                                         </p>
                                         <ul class="footer-nav-icons">
-                                            <li><a href="http://twitter.com/barclayswealth" class="footer-icon" style="background: transparent url('../../content/dam/bwpublic/global/images/aspect-ratio-1-0/home/icon-twitter-22x22.jpg') no-repeat;" target="_blank" title="">News Feed</a>
+                                            <li><a href="http://twitter.com/barclayswealth" class="footer-icon" style="background: transparent url('content/dam/bwpublic/global/images/aspect-ratio-1-0/home/icon-twitter-22x22.jpg') no-repeat;" target="_blank" title="">News Feed</a>
                                             </li>
-                                            <li><a href="http://www.linkedin.com/company/barclays-wealth-and-investment-management/" class="footer-icon" style="background: transparent url('../../content/dam/bwpublic/global/images/aspect-ratio-1-0/home/icon-linkedin-22x22.jpg') no-repeat;" target="_blank" title="">Linked in</a>
+                                            <li><a href="http://www.linkedin.com/company/barclays-wealth-and-investment-management/" class="footer-icon" style="background: transparent url('content/dam/bwpublic/global/images/aspect-ratio-1-0/home/icon-linkedin-22x22.jpg') no-repeat;" target="_blank" title="">Linked in</a>
                                             </li>
-                                            <li><a href="https://en-gb.facebook.com/BarclaysWealthandInvestmentManagement" class="footer-icon" style="background: transparent url('../../content/dam/bwpublic/global/images/aspect-ratio-1-0/home/icon-facebook-22x22.jpg') no-repeat;" target="_blank" title="">Follow us on twitter</a>
+                                            <li><a href="https://en-gb.facebook.com/BarclaysWealthandInvestmentManagement" class="footer-icon" style="background: transparent url('content/dam/bwpublic/global/images/aspect-ratio-1-0/home/icon-facebook-22x22.jpg') no-repeat;" target="_blank" title="">Follow us on twitter</a>
                                             </li>
-                                            <li><a href="http://www.youtube.com/user/mybarclayswealth" class="footer-icon" style="background: transparent url('../../content/dam/bwpublic/global/images/aspect-ratio-1-0/home/youtube_icon_22x22.jpg') no-repeat;" target="_blank" title="">Facebook</a>
+                                            <li><a href="http://www.youtube.com/user/mybarclayswealth" class="footer-icon" style="background: transparent url('content/dam/bwpublic/global/images/aspect-ratio-1-0/home/youtube_icon_22x22.jpg') no-repeat;" target="_blank" title="">Facebook</a>
                                             </li>
-                                            <li><a href="http://barclayswealthblog.com/" class="footer-icon" style="background: transparent url('../../content/dam/bwpublic/global/images/aspect-ratio-1-0/home/wordpress.jpg') no-repeat;" target="_blank" title="">Facebook</a>
+                                            <li><a href="http://barclayswealthblog.com/" class="footer-icon" style="background: transparent url('content/dam/bwpublic/global/images/aspect-ratio-1-0/home/wordpress.jpg') no-repeat;" target="_blank" title="">Facebook</a>
                                             </li>
                                         </ul>
                                     </li>

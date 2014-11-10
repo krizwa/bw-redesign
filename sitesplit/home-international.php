@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="page-wrapper home-international">
+    <div class="page-wrapper page-unit-others color-theme-others">
         
         <?php include("modules/common/M004-header.php"); ?>
         
@@ -40,7 +40,7 @@
         <?php include("modules/common/M006-footer.php"); ?>
     </div>
 
-    <?php include("modules/common/M007-scripts-bottom.php"); ?>
+    <?php include("modules/common/M007-scripts-bottom-dev.php"); ?>
 </body>
 
 </html>

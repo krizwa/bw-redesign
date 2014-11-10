@@ -9,22 +9,38 @@
     display: inline-block;
     font-family: "ExpertSansBold", Helvetica, Arial;
     letter-spacing: 0.1em;
-    padding: 5px 0px 3px 0px;
+    padding: 4px 0px;
     width: 182px;
     text-align: center;
 }
 .cta-primary {
-    .gradient-bc (top, #0b90c9, #149fda, #017fb9);
+    background: #047ac4;
+    //.gradient-bc (top, #0b90c9, #149fda, #017fb9);
     &:hover {
-        .gradient-bc (top, #0b90c9, #017fb9, #149fda);
+        color: #000;
+        background: #83d0f6;
+        text-decoration: none;
+        //.gradient-bc (top, #0b90c9, #017fb9, #149fda);
+    }
+    &:active {
+        color: #000;
+        background: #5bc5f2;
+        //.gradient-bc (top, #0b90c9, #017fb9, #149fda);
     }
 }
 .cta, .cta-secondary {
-    .gradient-bc (top, #00395e, #01385e, #01385e);
+    .gradient-bc (top, #1a6a9b, #1b6d9f, #00395e);
     &:hover {
-        .gradient-bc (top, #00395e, #01385e, #01385e);
+        .gradient-bc (top, #007eb6, #007fb6, #0168aa);
+        text-decoration: none;
+    }
+    &:active {
+        .gradient-bc (top, #00395d, #11496a, #00395e);
     }
 }
+
+
+
 /* Activate Medium Screen (tablet behavior) - Portrait View  [iPad, GalaxyTab]*/
 
 @media only screen and (max-width: 980px) {} @media only screen and (min-width: 668px) and (max-width: 980px) {}

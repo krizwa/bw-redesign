@@ -1,0 +1,82 @@
+@import "../1_global/00_required.less";
+/* ==========================================================================
+= 2. C102 - Header (inc. Login options list & Country selector)
+========================================================================== */
+
+.header-top {
+    .clearfix();
+    margin: 0 auto;
+    width: 980px;
+    z-index: 999999;
+    position: relative;
+    .top-links {
+        float: right;
+        padding: 15px 0 0 0;
+        margin: 0;
+        strong, strong a {
+            color: gray;
+            font-size: 1em;
+            white-space: nowrap;
+        }
+        & > li > strong{
+            background: transparent url(../img/down-arrow-small-icon.png) right 7px no-repeat;
+            padding-right: 12px;
+        }
+        a {
+            white-space: nowrap;
+        }
+        & > li {
+            display: inline-block;
+            position: relative;
+            margin-left: 15px;
+            &:hover .top-links-details {
+                display: block;
+            }
+            &:hover strong a {
+                text-decoration: none;
+            }
+        }
+        .arrow{
+                background: transparent url(../img/top-arrow.png) right top no-repeat;
+                display: block;
+                height: 11px;
+                
+                
+                margin-right: 14px;
+                z-index: 99999;
+                margin-top: -11px;
+                
+            }
+        .top-links-details {
+           // .box-shadow (0px, 12px, 5px, 0.5);
+            border: 6px solid #d0cecf;
+            display: none;
+            padding: 0;
+            background: #fff;
+            margin-top: 5px;
+            position: absolute;
+            cursor: pointer;
+            right: 0;
+            top: 20px;
+
+            ul {
+                padding: 0 10px;
+                text-align: left;
+                margin-bottom: 0.5em;
+                margin-top: 10px;
+                li {
+                    list-style: none;
+                    background: transparent url(../img/sprite-icons-1x.png) -40px -32px no-repeat;
+                    padding: 2px 10px;
+                }
+            }
+            strong {
+                text-align: left;
+                border-top: 1px solid gray;
+                margin: 0px 10px 0 10px;
+                padding-top: 5px;
+            }
+        }
+
+    }
+}

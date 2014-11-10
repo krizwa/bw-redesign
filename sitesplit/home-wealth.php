@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="page-wrapper home-wealth">
+    <div class="page-wrapper page-unit-wealth color-theme-wealth">
         
         <?php include("modules/common/M004-header.php"); ?>
         

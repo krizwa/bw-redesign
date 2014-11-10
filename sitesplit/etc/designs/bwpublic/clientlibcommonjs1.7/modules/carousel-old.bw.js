@@ -17,7 +17,7 @@
          
          //methods 
          this.init = function(container, scroll, wrap, expert) {
-
+         
            if(typeof(scroll)==='undefined') scroll = 1;
            if(typeof(wrap)==='undefined') wrap = 'circular';
            if(typeof(expert)==='undefined') expert = false;
@@ -28,7 +28,20 @@
            this.carousel.jcarousel({ 
              'scroll' : scroll,
              'wrap' : wrap
-           });
+           }).jcarouselAutoscroll({
+                interval: 5000, 
+                scroll: '+=1',
+                create: $('.jcarousel').hover(function() {
+                    $(this).jcarouselAutoscroll('stop');
+                  },
+                  function() {
+                    $(this).jcarouselAutoscroll('start');
+                  })
+              });
+
+
+
+
            this.loaded = true;
 
            //initialise prev / next navigation

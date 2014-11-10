@@ -1,12 +1,11 @@
 @import "../1_global/00_required.less";
-
 /* ==========================================================================
 = 4. C201 - Promo
 ========================================================================== */
 
 .promo {
     outline: 0;
-    margin: 1px 0 8px 0;
+    margin: 0;
     position: relative;
     text-align: center;
     .copy-wrapper {
@@ -24,15 +23,6 @@
             letter-spacing: 0.17em;
         }
     }
-    figure{
-        
-    }
-    .add-to-dock {
-        color: #fff;
-        left: 0px;
-        position: absolute;
-        top: 0px;
-    }
     .cta-wrapper {
         bottom: 15px;
         position: absolute;
@@ -41,14 +31,8 @@
         right: 0;
     }
 }
-.lt-ie9 {
-    .promo:hover .add-to-dock, & .promo:hover .add-to-dock-added {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
-        opacity: 100;
-    }
-    & .promo .snippet p {
-        letter-spacing: 0;
-    }
+.lt-ie9 .promo .snippet p {
+    letter-spacing: 0;
 }
 .promo-no-cta .cta-wrapper, .promo-no-snippet .snippet, .promo-no-image figure {
     display: none;

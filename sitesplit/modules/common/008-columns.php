@@ -14,13 +14,13 @@
 
 	<div class="parsys_column">
 		<div class="parsys_column">
-			<?php $data = "promo-bg-color-4"; include("modules/components/C008-box-promo-2.php"); ?>
+			<?php $data = "promo-bg-color-3"; include("modules/components/C008-box-promo-2.php"); ?>
 		</div>
 		<div class="parsys_column">
 			<?php $data = "promo-bg-color-5"; include("modules/components/C008-box-promo-2.php"); ?>
 		</div>
 		<div class="parsys_column">
-			<?php $data = "promo-bg-color-6"; include("modules/components/C008-box-promo-2.php"); ?>
+			<?php $data = "promo-bg-color-6"; include("modules/components/C008-box-promo-3.php"); ?>
 		</div>
 	</div>
 </section>
