@@ -27,13 +27,20 @@
     background-color: #fff;
     overflow: hidden;
     margin: 0 0.411522634%;
-    padding: 8px 0 50px 0;
+    padding: 8px 0 10px 0;
+    .skin-theme-others & {
+        margin: 0;
+    }
     .basic-links-list {
         h3 {
             font-family: @font-expert-sans-bold;
-            padding: 0 0 0 25px;
+            padding: 10px 0 10px 25px;
+            margin: 0;
             font-size: 1.16667em;
-            text-transform: uppercase;
+            .skin-theme-wealth & {
+               text-transform: uppercase;
+            }
+            
         }
         ul {
             list-style: none;
@@ -41,7 +48,7 @@
             padding: 0;
         }
         ul li {
-            border-top: 1px solid #ebebeb;
+            border-top: 1px solid #cccccc;
             line-height: 1.1;
         }
         ul li a {
@@ -51,6 +58,12 @@
             letter-spacing: 0.1em;
             padding: 10px 45px 10px 25px;
             color: black;
+            .skin-theme-wealth & {
+               text-transform: uppercase;
+            }
+        }
+        .skin-theme-others & {
+            border: 1px solid #cccccc;
         }
     }
 }

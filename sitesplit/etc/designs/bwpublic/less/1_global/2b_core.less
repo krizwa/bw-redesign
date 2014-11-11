@@ -1,5 +1,4 @@
 @import "../1_global/00_required.less";
-
 /* ==========================================================================
 = 1. Typography
 ========================================================================== */
@@ -32,7 +31,6 @@ h2 {
     margin: 0 0 0.7em;
 }
 /* Aside content header */
-
 
 h3 {
     color: black;
@@ -92,8 +90,8 @@ a {
         text-indent: -9999999px;
     }
     &:focus {
-    //    outline: 2px solid #000; //KR
-    //    border: 0.1px solid #fff; //KR
+        //    outline: 2px solid #000; //KR
+        //    border: 0.1px solid #fff; //KR
     }
 }
 .views, .list-views, .social-views {
@@ -101,4 +99,14 @@ a {
 }
 .date {
     border-right: 0 none !important;
+}
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
 }

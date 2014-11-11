@@ -1,4 +1,4 @@
-<div id="wt-wrapper-search" class="page-search">
+<div class="page-search" id="wt-wrapper-search">
 
   <h2>What are you looking for?</h2>
   <div class="open" id="search-container">
@@ -8,16 +8,16 @@
       <form class="search-form" id="search-form" action="#">
         <fieldset>
           <legend>Search</legend>
-          <label for="search-query">What are you looking for?</label>
+          <label for="search-query" class="hidden">What are you looking for?</label>
           <input type="text" class="search-text" value="" id="search-query" name="search-query" autocomplete="off" placeholder="Search">
           <input type="submit" class="search-button" value="Search" id="search-go">
         </fieldset>
       </form>
     </div>
 
-    <div id="wt-results-wrap" class="top-goal-searches">
-      <div id="wt-subtitle">Top goal searches</div>
-      <div id="wt-results">
+    <div class="top-goal-searches" id="wt-results-wrap">
+      <div class="goal-searches-subtitle" id="wt-subtitle">Top goal searches</div>
+      <div class="goal-searches-results" id="wt-results">
         <div class="cta-wrapper"><a class="cta-secondary" href="#">Relationship Service</a></div>
         <div class="cta-wrapper"><a class="cta-secondary" href="#">International Transfer</a></div>
         <div class="cta-wrapper"><a class="cta-secondary" href="#">Bank Account</a></div>

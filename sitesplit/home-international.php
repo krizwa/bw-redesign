@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="page-wrapper page-unit-others color-theme-others">
+    <div class="page-wrapper page-unit-others skin-theme-others">
         
         <?php include("modules/common/M004-header.php"); ?>
         
@@ -35,6 +35,8 @@
                 </div>
                 <!-- main column [end] -->
             </div>
+
+            <?php include("modules/components/C017-bottom-text.php"); ?>
         </div>
 
         <?php include("modules/common/M006-footer.php"); ?>

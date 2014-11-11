@@ -16,7 +16,7 @@
                 <form class="search-form" action="/search-results.html">
                     <fieldset>
                         <legend>Search</legend>
-                        <label for="search">What are you looking for?</label>
+                        <label for="search" class="hidden">What are you looking for?</label>
                         <input type="text" class="search-text" value="" id="search" name="search" autocomplete="off" placeholder="Search">
                         <input type="submit" class="search-button" value="Search">
                     </fieldset>

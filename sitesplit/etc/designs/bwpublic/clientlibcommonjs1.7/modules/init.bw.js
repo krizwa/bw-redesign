@@ -222,6 +222,10 @@
                 if ( $('.promoRow').length ) {
                      BW.columnEqualHeight.init();
                 }
+                // to make the height equal for each column in a row
+                if ( $('.service-group-landing-manual-links').length ) {
+                     BW.columnEqualHeight.init('.service-group-landing-manual-links', '.basic-links-list');
+                }
 
                 // to make the height equal for each column in a row
                 if ( $('.related-links h2').length ) {

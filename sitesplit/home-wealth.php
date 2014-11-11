@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="page-wrapper page-unit-wealth color-theme-wealth">
+    <div class="page-wrapper page-unit-wealth skin-theme-wealth">
         
         <?php include("modules/common/M004-header.php"); ?>
         
@@ -33,9 +33,10 @@
                 <div class="grid-3col">
                     <?php include("modules/components/C006-service-group-landing-manual-links.php"); ?>
                 </div>
-                
                 <!-- main column [end] -->
             </div>
+
+            <?php include("modules/components/C017-bottom-text.php"); ?>
         </div>
 
         <?php include("modules/common/M006-footer.php"); ?>

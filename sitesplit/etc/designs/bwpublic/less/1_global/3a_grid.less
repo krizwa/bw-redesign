@@ -6,7 +6,7 @@
 #main-content {
     background-color: #e9e9e9;
 }
-.page-unit-others #main-content {
+.skin-theme-others #main-content {
     background-color: #fff;
 }
 #content-wrapper {
@@ -23,15 +23,24 @@
 .promoRow > .parsys_column {
     .clearfix();
 }
-.module, .parsys_column .parsys_column {
+.column, .parsys_column .parsys_column {
     float: left;
     margin: 0.411522634%;
 }
 .grid-3col {
     .clearfix();
     padding: 0.408163265%;
-    .module, & .parsys_column .parsys_column {
+    .column, & .parsys_column .parsys_column {
         width: 32.51028807%;
+    }
+}
+
+.grid-1col {
+    .clearfix();
+    .column{
+        width: 980px;
+        margin: 0 auto;
+        float: none;
     }
 }
 .related-links h2 {

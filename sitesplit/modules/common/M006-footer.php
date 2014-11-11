@@ -68,7 +68,7 @@
                                         </ul>
                                     </li>
                                     <li class="footer-nav-legal">
-                                        <p>Products and services on this site may not be available in certain jurisdictions. In particular, these products and services are not being offered in Japan or the United States or to US residents. For full details of exclusions and disclaimers please see the <a href='others/important-information.html'>important information</a> before proceeding. Each Barclays company reserves the right to make a final determination on whether or not you are eligible for any particular product or service. This page is operated by Barclays outside of the United States. In accordance with U.S. regulation, the use of Twitter and other social media websites for communication with Barclays is prohibited. If you have an account operated in the U.S. and wish to discuss your account, please contact your Investment Representative by email or telephone.</p>
+                                        <p>* This page is operated by Barclays outside of the United States. In accordance with U.S. regulation, the use of Twitter and other social media websites for communication with Barclays is prohibited. If you have an account operated in the U.S. and wish to discuss your account, please contact your Investment Representative by email or telephone.</p>
                                     </li>
                                     <li class="footer-nav-copyright">
                                         <!-- each list has unique class for styling -->

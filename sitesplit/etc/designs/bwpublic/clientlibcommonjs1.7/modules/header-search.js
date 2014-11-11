@@ -18,7 +18,7 @@
             this.toggleFormLayer = function() {
 
                 var element = element ? element : ".header-search .search-toggle",
-                    details = details ? details : ".header-search form";
+                    details = details ? details : ".header-search .search-fields";
 
                 $(element).click(function() {
 
@@ -38,7 +38,7 @@
 
                 var container = container ? container : $(".header-search"),
                     element = element ? element : container.find(".search-toggle"),
-                    target = target ? target : container.find("form");
+                    target = target ? target : container.find(".search-fields");
 
                 $(document).mouseup(function(e) {
                     if (!container.is(e.target) && container.has(e.target).length === 0 && target.is(":visible")) {
